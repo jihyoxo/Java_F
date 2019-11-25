@@ -38,19 +38,19 @@ public class CalendarDemo {
 		
 		switch(totalDays % 7) {
 		case 0 : 
-			message = "토요일"; break;
-		case 1 : 
 			message = "일요일"; break;
-		case 2 : 
+		case 1 : 
 			message = "월요일"; break;
-		case 3 : 
+		case 2 : 
 			message = "화요일"; break;
-		case 4 : 
+		case 3 : 
 			message = "수요일"; break;
-		case 5 : 
+		case 4 : 
 			message = "목요일"; break;
-		case 6 : 
+		case 5 : 
 			message = "금요일"; break;
+		case 6 : 
+			message = "토요일"; break;
 		
 		}
 		
