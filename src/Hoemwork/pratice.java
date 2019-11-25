@@ -9,7 +9,7 @@ public class pratice {
 		3. 윤년은 4년마다 발생하고 그중에서 100배수는 제외하고 400배수는 포함한다.
 		4. 2019년 12월 25일 무슨 요일 일까요?
 		 */
-		
+		 
 		int year = 2019;
 		int month = 12;
 		int day = 25;
@@ -51,7 +51,7 @@ public class pratice {
 			message = "금요일";
 		}else if (dayOfWeek == 6) {
 			message = "토요일";
-		}else {
+		}else if (dayOfWeek == 0){
 			message = "일요일";	
 		}
 		
