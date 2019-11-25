@@ -4,7 +4,7 @@ public class Homework2 {
 	public static void main(String[] args) {
 		//문자 reverse 하기.
 		//1. input "abcd"		=> 	"dcba"
-		//2. input "abcde"		=>		"edcba"
+		//2. input "abcde"		=>	"edcba"
 		
 		String input = "abcd";	//"abcde"
 		char[] ch = input.toCharArray();	
@@ -14,17 +14,21 @@ public class Homework2 {
 		}
 		System.out.println();
 	
-		
-		//1~100까지 소수를 구하기.
- 
-		int num = 100;
-		int rmd = 0;
-		int n = 0 ;
-		for (n = 1; n <= num; n++) {
-			if(num % n == 0){
-				System.out.println(num);
+		// 1~100 소수 구하기.
+
+		int set, j, num = 0;
+		for (set = 1; set <= 100; set++) {
+			num = 0;
+			for (j = 2; j < set; j++) {
+				if (set % j == 0) {
+					num++;
+					break;
+				}
+			}     
+			if (num == 0) {
+				System.out.print(set + " ");
 			}
 		}
-		
+
 	}
 }

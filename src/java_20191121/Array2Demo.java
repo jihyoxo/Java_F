@@ -22,7 +22,7 @@ public class Array2Demo {
 			System.out.println();
 		}
 		
-//2)		
+//2)		mon
 		int[][] c = {{1}, {2, 3}, {4, 5, 6}};
 		//2차원 배열의 동적 생성
 		int[][] d = new int[3][];
