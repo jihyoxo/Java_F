@@ -51,7 +51,7 @@ public class pratice {
 			message = "금요일";
 		}else if (dayOfWeek == 6) {
 			message = "토요일";
-		}else {
+		}else if (dayOfWeek == 0){
 			message = "일요일";	
 		}
 		
