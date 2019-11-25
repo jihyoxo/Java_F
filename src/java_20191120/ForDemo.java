@@ -2,20 +2,20 @@ package java_20191120;
 
 public class ForDemo {
 	public static void main(String[] args) {
-//1)
+//1) 0부처 4까지의 
 		int sum = 0;
 		for(int i=0; i < 5; i++){
 			//System.out.println(i);		// 0,1,2,3,4
 			sum += i;  //sum = sum+i	//0+1+2+3+4=> 10
 		}		
 		System.out.println(sum);
-//2)		
+//2)	 0부터 4까지의 숫자를 프린트
 		int ii = 0;
 		for  ( ; ii<5 ; ){				// (초기값)int i=0랑 i++를 밖으로 빼도 되지만 비추천
 			//System.out.println(ii);
 			ii++;
 		}
-//3)		
+//3)	 0부터 4까지의 숫자를 프린트
 		int iii= 0;
 		while  ( iii < 5 ){				// 초기값을 뺄거면 while문 사용
 			//System.out.println(iii);

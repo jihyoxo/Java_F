@@ -2,10 +2,12 @@ package java_20191122;
 
 public class CustomerDemo {
 	public static void main(String[] args) {
+		Customer.interestRate = 4.5;
+
 		Customer c1 = new Customer();
 		c1.name = "성영한";
 		c1.email = "syh@hbilab.org";
-		System.out.println(c1.name + ", " + c1.email);		//성영한, syh@hbilab.org
+		System.out.println(c1.name + ", " + c1.email);		//성영한, syh@hbilab.org		
 		
 		Customer c2 = new Customer();
 		c2. name = "손정의";
