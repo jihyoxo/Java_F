@@ -5,15 +5,44 @@ public class CalendarDemo {
 	private int month;
 	private int day;
 	private int totalCount;
-	int[] monthArray = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	private int[] monthArray = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-	public void set(int y, int m, int d) {
-		year = y;
-		month = m;
-		day = d;
+	public CalendarDemo(int y) {
+//		year = y;
+		this(y, 0, 0);
 	}
+	
+	public CalendarDemo(int y, int m) {
+//		year = y;
+//		month = m;
+		this(y, m, 0);
+	}
+	
+	//매개변수 3개짜리 생성자
+	public CalendarDemo(int year, int month, int day) {
+		this.year = year;
+		this.month = month;
+		this.day = day;
+		getTotalCount();
+	}
+	//메소드
+//	public void set(int y, int m, int d) {
+//		year = y;
+//		month = m;
+//		day = d;
+//		getTotalCount();
+//	}
+//	public void set(int y, int m) {
+//		year = y;
+//		month = m;
+//		getMonth();
+//	}
+//	public void set(int y) {
+//		year = y;
+//		getYear();
+//	}
 
-	public int getTotalCount() { // void가 아니면 return 필요
+	private int getTotalCount() { // void가 아니면 return 필요
 		// preYear => 2018년도
 		int preYear = year - 1;
 		// preMonth => 2019년 11월
@@ -54,13 +83,23 @@ public class CalendarDemo {
 		} else if (dayOfWeek == 0) {
 			message = "일요일";
 		}
-		System.out.printf("%d년 %d월 %d일 %s 입니다.", year, month, day, message);
+		System.out.printf("%d년 %d월 %d일 %s입니다.", year, month, day, message);
 	}
-
+	/*
+	public CalendarDemo (){
+		
+	}
 	public static void main(String[] args) {
-		CalendarDemo c = new CalendarDemo();
+		CalendarDemo c = new CalendarDemo(); //매개변수 생성자가 없는때 사용
 		c.set(2019, 12, 25);
-		c.getTotalCount();
+		//c.getTotalCount();
+		c.print();
+	}
+	*/ //OR
+	public static void main(String[] args) {
+		CalendarDemo c = new CalendarDemo(2019, 12, 25); //매개변수 생성자가 없는때 사용
+		//c.set(2019, 12, 25);
+		//c.getTotalCount();
 		c.print();
 	}
 
