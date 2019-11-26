@@ -8,7 +8,7 @@ public class StopWatchDemo {
 		for (long i = 0; i < 5000000000l; i++) {
 
 		}
-		s.stopNano();
+		s.stop();
 		double elapsedTime = s.getElapseTime();
 		System.out.printf("경과시간 : %.9f", elapsedTime);
 
