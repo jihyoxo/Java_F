@@ -2,15 +2,15 @@ package java_20191126.step5;
 
 public class StopNanoWatch extends StopWatch {
 
-	public void start() {
+	private void start() {
 		startTime = System.nanoTime();
 	}
 
-	public void stop() {
+	private void stop() {
 		endTime = System.nanoTime();
 	}
 
-	public double getElapseTime() {
+	private double getElapseTime() {
 		return (double) (endTime - startTime) / (double) 100000000;
 	}
 

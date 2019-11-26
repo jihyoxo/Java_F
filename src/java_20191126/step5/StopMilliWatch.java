@@ -2,15 +2,15 @@ package java_20191126.step5;
 
 public class StopMilliWatch extends StopWatch {
 
-	public void start() {
+	private void start() {
 		startTime = System.currentTimeMillis();
 	}
 
-	public void stop() {
+	private void stop() {
 		endTime = System.currentTimeMillis();
 	}
 
-	public double getElapsedTime() {
+	private double getElapsedTime() {
 		return (double) (endTime - startTime) / (double) 100;
 	}
 

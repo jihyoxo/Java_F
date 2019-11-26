@@ -6,25 +6,25 @@ public class StopWatchDemo {
 	}
 
 	// 2)
-	public static void main(String[] args) throws Exception {
-		String input = args[0];
-		input = "java_20191126.step5." + input;
-		//java reflection
-		StopWatch s1 = (StopWatch)Class.forName(input).newInstance();
-		execute(s1);
-	}
-	// Run Configurations => Arguments => type StopMilliWatch/StopMicroWatch/StopNanoWatch
-	
-	// 1)
-//	public static void main(String[] args) {
-//		StopMilliWatch s1 = new StopMilliWatch();
+//	public static void main(String[] args) throws Exception {
+//		String input = args[0];
+//		input = "java_20191126.step5." + input;
+//		//java reflection
+//		StopWatch s1 = (StopWatch)Class.forName(input).newInstance();
 //		execute(s1);
-//		System.out.println();		
-//		StopMicroWatch s3 = new StopMicroWatch();
-//		execute(s3);
-//		System.out.println();
-//		StopNanoWatch s2 = new StopNanoWatch();
-//		execute(s2);
 //	}
+	// Run Configurations => Arguments => type StopMilliWatch/StopMicroWatch/StopNanoWatch
+	 
+	// 1)
+	public static void main(String[] args) {
+		StopMilliWatch s1 = new StopMilliWatch();
+		execute(s1);
+		System.out.println();		
+		StopMicroWatch s3 = new StopMicroWatch();
+		execute(s3);
+		System.out.println();
+		StopNanoWatch s2 = new StopNanoWatch();
+		execute(s2);
+	}
 	
 }

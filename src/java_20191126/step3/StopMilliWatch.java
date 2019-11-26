@@ -1,8 +1,11 @@
 package java_20191126.step3;
 
 public class StopMilliWatch {
+	
 	private long startTime;
+	
 	private long endTime;
+	
 	public void start() {
 		startTime = System.currentTimeMillis();
 	}
