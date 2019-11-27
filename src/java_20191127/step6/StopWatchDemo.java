@@ -7,17 +7,22 @@ public class StopWatchDemo {
 	}
 
 	 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		String input = args[0];
+		String classnName = "java_20191127.step6." + input;
+		StopWatch s = (StopWatch)Class.forName(classnName).newInstance();
 		StopWatchDemo swd = new StopWatchDemo();
+		swd.execute(s);
 		
-		StopNanoWatch s = new StopNanoWatch();
-		swd.execute(new StopNanoWatch());	 //s넣어도 상관없음.
-			System.out.println();
-		StopMicroWatch s2 = new StopMicroWatch();
-		swd.execute(new StopMicroWatch());
-			System.out.println();
-		StopMilliWatch s1 = new StopMilliWatch();
-		swd.execute(new StopMilliWatch());
+//		StopWatchDemo swd = new StopWatchDemo();		
+//		StopNanoWatch s = new StopNanoWatch();
+//		swd.execute(new StopNanoWatch());	 //s넣어도 상관없음.
+//			System.out.println();
+//		StopMicroWatch s2 = new StopMicroWatch();
+//		swd.execute(new StopMicroWatch());
+//			System.out.println();
+//		StopMilliWatch s1 = new StopMilliWatch();
+//		swd.execute(new StopMilliWatch());
 		
 	}
 }
