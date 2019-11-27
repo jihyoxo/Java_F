@@ -1,4 +1,4 @@
-package java_20191127;
+package java_20191127.implement;
 
 // 인터페이스 간의 상속은 다중 상속 가능
 public interface InterA extends InterB, InterC {
