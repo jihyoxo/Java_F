@@ -25,6 +25,7 @@ public class MultiClientThread implements Runnable {
 					System.exit(0);
 				} else {
 					jta.append(readLine + "\n");
+					jta.setCaretPosition(jta.getDocument().getLength());
 				}
 			} catch (IOException e) {
 				// TODO Auto-generated catch block

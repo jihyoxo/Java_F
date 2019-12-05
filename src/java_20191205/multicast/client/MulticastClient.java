@@ -123,7 +123,7 @@ public class MulticastClient implements ActionListener{
 	
 	public static void main(String[] args) {
 		JFrame.setDefaultLookAndFeelDecorated(true);	//창 디자인 바뀜
-		new MulticastClient("Jihyo", "192.168.0.202", 3000).connect();;
+		new MulticastClient("syh1011", "192.168.0.202", 3000).connect();
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
